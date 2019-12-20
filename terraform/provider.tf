@@ -10,5 +10,5 @@ variable "pvt_key" {}
 variable "ssh_fingerprint" {}
 
 provider "digitalocean" {
-  token = "${var.digital_ocean_api_token}"
+  token = var.digital_ocean_api_token
 }
